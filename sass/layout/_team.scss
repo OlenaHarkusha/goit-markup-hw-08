@@ -1,0 +1,71 @@
+.people {
+  background-color: $grey-bg-color;
+}
+.people__secondary-title {
+  margin-bottom: 30px;
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+
+.people__list {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.people__item {
+  background-color: $white-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+.people__wrapper {
+  padding: 30px 0;
+  /*   margin: 0 auto; */
+}
+.people__text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.people__title {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  color: $header-color;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.people__social-links {
+  margin-top: 16px;
+}
+
+.social-links__link {
+  color: $icon-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $active-accent-color;
+    color: $white-accent-color;
+  }
+}
