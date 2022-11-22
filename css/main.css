@@ -104,6 +104,12 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 767px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
 
 .button {
   border: none;
@@ -217,6 +223,7 @@ a {
 @media screen and (max-width: 1199px) {
   .contacts {
     flex-direction: column;
+    gap: 10px;
   }
 }
 
@@ -261,8 +268,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -432,6 +439,9 @@ a {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero.jpg);
     max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -1139,7 +1149,7 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .filter-buttons {
     justify-content: center;
   }
@@ -1153,6 +1163,11 @@ a {
 @media screen and (min-width: 768px) {
   .portfolio__filter-buttons {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__filter-buttons {
+    margin-bottom: 50px;
   }
 }
 
@@ -1215,6 +1230,11 @@ a {
 .product:hover, .product:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product {
+    height: 100%;
+  }
+}
 
 .product__wrapper {
   position: relative;
@@ -1240,9 +1260,13 @@ a {
 }
 
 .product__name-wrapper {
-  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product__name-wrapper {
+    flex-grow: 1;
+  }
 }
 
 .product__title {

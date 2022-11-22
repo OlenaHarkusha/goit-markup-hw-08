@@ -66,6 +66,7 @@
   display: flex;
   @media screen and (max-width: 1199px) {
     flex-direction: column;
+    gap: 10px;
   }
 }
 
@@ -113,8 +114,8 @@
   justify-content: space-between;
   align-items: center;
 
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   position: relative;
 
